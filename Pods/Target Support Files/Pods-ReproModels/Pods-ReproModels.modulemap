@@ -1,0 +1,6 @@
+framework module Pods_ReproModels {
+  umbrella header "Pods-ReproModels-umbrella.h"
+
+  export *
+  module * { export * }
+}
