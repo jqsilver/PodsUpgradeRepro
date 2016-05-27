@@ -11,14 +11,14 @@ target 'PodsUpgradeRepro' do
 end
 
 # uses Cocoalumberjack but not Mantle
-target 'ReproLogging', exclusive: true do
-  xcodeproj 'ReproLogging/ReproLogging.xcodeproj'
+target 'ReproLogging' do
+  project 'ReproLogging/ReproLogging.xcodeproj'
   pod 'CocoaLumberjack/Swift'
 end
 
 # uses Mantle but not Cocoalumberjack
-target 'ReproModels', exclusive: true do
-  xcodeproj 'ReproModels/ReproModels.xcodeproj'
+target 'ReproModels' do
+  project 'ReproModels/ReproModels.xcodeproj'
   pod 'Mantle', '1.5.4'
 end
 
