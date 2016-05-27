@@ -12,9 +12,30 @@
 		DD8A9A591CF8C1B90043EE55 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD8A9A571CF8C1B90043EE55 /* Main.storyboard */; };
 		DD8A9A5B1CF8C1B90043EE55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD8A9A5A1CF8C1B90043EE55 /* Assets.xcassets */; };
 		DD8A9A5E1CF8C1B90043EE55 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD8A9A5C1CF8C1B90043EE55 /* LaunchScreen.storyboard */; };
+		DD8A9AAB1CF8CD8C0043EE55 /* ReproLogging.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD8A9AA81CF8CD810043EE55 /* ReproLogging.framework */; };
+		EE1590E01BB422F82AFCCE7E /* Pods_PodsUpgradeRepro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25B4559E5FA7FE3EFD1EF21B /* Pods_PodsUpgradeRepro.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		DD8A9AA71CF8CD810043EE55 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DD8A9AA31CF8CD810043EE55 /* ReproLogging.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DD8A9A961CF8CD2D0043EE55;
+			remoteInfo = ReproLogging;
+		};
+		DD8A9AA91CF8CD860043EE55 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DD8A9AA31CF8CD810043EE55 /* ReproLogging.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = DD8A9A951CF8CD2D0043EE55;
+			remoteInfo = ReproLogging;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		25B4559E5FA7FE3EFD1EF21B /* Pods_PodsUpgradeRepro.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PodsUpgradeRepro.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1CC1E0434582C5C58429DD0 /* Pods-PodsUpgradeRepro.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PodsUpgradeRepro.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PodsUpgradeRepro/Pods-PodsUpgradeRepro.debug.xcconfig"; sourceTree = "<group>"; };
 		DD8A9A501CF8C1B90043EE55 /* PodsUpgradeRepro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PodsUpgradeRepro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD8A9A531CF8C1B90043EE55 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DD8A9A551CF8C1B90043EE55 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +43,8 @@
 		DD8A9A5A1CF8C1B90043EE55 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DD8A9A5D1CF8C1B90043EE55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DD8A9A5F1CF8C1B90043EE55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD8A9AA31CF8CD810043EE55 /* ReproLogging.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ReproLogging.xcodeproj; path = ReproLogging/ReproLogging.xcodeproj; sourceTree = "<group>"; };
+		E2573EA8A74673C15FF7F7D0 /* Pods-PodsUpgradeRepro.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PodsUpgradeRepro.release.xcconfig"; path = "Pods/Target Support Files/Pods-PodsUpgradeRepro/Pods-PodsUpgradeRepro.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +52,39 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD8A9AAB1CF8CD8C0043EE55 /* ReproLogging.framework in Frameworks */,
+				EE1590E01BB422F82AFCCE7E /* Pods_PodsUpgradeRepro.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		05B5D926BAB3B9F50EFA73D7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C1CC1E0434582C5C58429DD0 /* Pods-PodsUpgradeRepro.debug.xcconfig */,
+				E2573EA8A74673C15FF7F7D0 /* Pods-PodsUpgradeRepro.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		67797244AC15750E603BF8DD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DD8A9AA31CF8CD810043EE55 /* ReproLogging.xcodeproj */,
+				25B4559E5FA7FE3EFD1EF21B /* Pods_PodsUpgradeRepro.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		DD8A9A471CF8C1B90043EE55 = {
 			isa = PBXGroup;
 			children = (
 				DD8A9A521CF8C1B90043EE55 /* PodsUpgradeRepro */,
 				DD8A9A511CF8C1B90043EE55 /* Products */,
+				05B5D926BAB3B9F50EFA73D7 /* Pods */,
+				67797244AC15750E603BF8DD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +109,14 @@
 			path = PodsUpgradeRepro;
 			sourceTree = "<group>";
 		};
+		DD8A9AA41CF8CD810043EE55 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DD8A9AA81CF8CD810043EE55 /* ReproLogging.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,13 +124,17 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DD8A9A621CF8C1B90043EE55 /* Build configuration list for PBXNativeTarget "PodsUpgradeRepro" */;
 			buildPhases = (
+				1B4FE9F95319C51094132674 /* Check Pods Manifest.lock */,
 				DD8A9A4C1CF8C1B90043EE55 /* Sources */,
 				DD8A9A4D1CF8C1B90043EE55 /* Frameworks */,
 				DD8A9A4E1CF8C1B90043EE55 /* Resources */,
+				49EF4E7DE3C3A9D252A903AE /* Embed Pods Frameworks */,
+				79B9B4D519D92BC724553D8A /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				DD8A9AAA1CF8CD860043EE55 /* PBXTargetDependency */,
 			);
 			name = PodsUpgradeRepro;
 			productName = PodsUpgradeRepro;
@@ -110,12 +167,28 @@
 			mainGroup = DD8A9A471CF8C1B90043EE55;
 			productRefGroup = DD8A9A511CF8C1B90043EE55 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = DD8A9AA41CF8CD810043EE55 /* Products */;
+					ProjectRef = DD8A9AA31CF8CD810043EE55 /* ReproLogging.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				DD8A9A4F1CF8C1B90043EE55 /* PodsUpgradeRepro */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		DD8A9AA81CF8CD810043EE55 /* ReproLogging.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ReproLogging.framework;
+			remoteRef = DD8A9AA71CF8CD810043EE55 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		DD8A9A4E1CF8C1B90043EE55 /* Resources */ = {
@@ -130,6 +203,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1B4FE9F95319C51094132674 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		49EF4E7DE3C3A9D252A903AE /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PodsUpgradeRepro/Pods-PodsUpgradeRepro-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		79B9B4D519D92BC724553D8A /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PodsUpgradeRepro/Pods-PodsUpgradeRepro-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DD8A9A4C1CF8C1B90043EE55 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -141,6 +262,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DD8A9AAA1CF8CD860043EE55 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ReproLogging;
+			targetProxy = DD8A9AA91CF8CD860043EE55 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		DD8A9A571CF8C1B90043EE55 /* Main.storyboard */ = {
@@ -249,6 +378,7 @@
 		};
 		DD8A9A631CF8C1B90043EE55 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C1CC1E0434582C5C58429DD0 /* Pods-PodsUpgradeRepro.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = PodsUpgradeRepro/Info.plist;
@@ -260,6 +390,7 @@
 		};
 		DD8A9A641CF8C1B90043EE55 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E2573EA8A74673C15FF7F7D0 /* Pods-PodsUpgradeRepro.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = PodsUpgradeRepro/Info.plist;
@@ -288,6 +419,7 @@
 				DD8A9A641CF8C1B90043EE55 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -7,12 +7,18 @@
 //
 
 import UIKit
+import Mantle
+import CocoaLumberjack
+import ReproLogging
 
 class ViewController: UIViewController {
 
   override func viewDidLoad() {
+    
     super.viewDidLoad()
     // Do any additional setup after loading the view, typically from a nib.
+    DDLogDebug("hey")
+    TestLogging()
   }
 
   override func didReceiveMemoryWarning() {
