@@ -97,10 +97,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DD8A9A9E1CF8CD2D0043EE55 /* Build configuration list for PBXNativeTarget "ReproLogging" */;
 			buildPhases = (
+				C5C4C29F280A2D0472D06344 /* 📦 Check Pods Manifest.lock */,
 				DD8A9A911CF8CD2D0043EE55 /* Sources */,
 				DD8A9A921CF8CD2D0043EE55 /* Frameworks */,
 				DD8A9A931CF8CD2D0043EE55 /* Headers */,
 				DD8A9A941CF8CD2D0043EE55 /* Resources */,
+				C2DFA3CA77EF225DA3287D9F /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -151,6 +153,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C2DFA3CA77EF225DA3287D9F /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-ReproLogging/Pods-ReproLogging-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C5C4C29F280A2D0472D06344 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DD8A9A911CF8CD2D0043EE55 /* Sources */ = {
@@ -257,6 +292,7 @@
 		};
 		DD8A9A9F1CF8CD2D0043EE55 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E6C5F0A6582510DE1EDC4C75 /* Pods-ReproLogging.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
@@ -276,6 +312,7 @@
 		};
 		DD8A9AA01CF8CD2D0043EE55 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5737F72B45F08BB3945C65BC /* Pods-ReproLogging.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;

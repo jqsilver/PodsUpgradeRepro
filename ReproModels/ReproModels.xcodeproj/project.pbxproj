@@ -7,15 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E7B67FEC87F469BBEB9AB35 /* Pods_ReproModels.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BF7F7C3A47BCC355B652F75 /* Pods_ReproModels.framework */; };
 		DD8A9ABD1CF8E7570043EE55 /* ReproModels.h in Headers */ = {isa = PBXBuildFile; fileRef = DD8A9ABC1CF8E7570043EE55 /* ReproModels.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DDABB5971CF8E9D2000329C5 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDABB5961CF8E9D2000329C5 /* File.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1BF7F7C3A47BCC355B652F75 /* Pods_ReproModels.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReproModels.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		71F16A84AE8D15B698F2B7F9 /* Pods-ReproModels.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReproModels.release.xcconfig"; path = "../Pods/Target Support Files/Pods-ReproModels/Pods-ReproModels.release.xcconfig"; sourceTree = "<group>"; };
 		DD8A9AB91CF8E7570043EE55 /* ReproModels.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ReproModels.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD8A9ABC1CF8E7570043EE55 /* ReproModels.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReproModels.h; sourceTree = "<group>"; };
 		DD8A9ABE1CF8E7570043EE55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DDABB5961CF8E9D2000329C5 /* File.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		F54C2B7D15CAD197369DF776 /* Pods-ReproModels.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReproModels.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-ReproModels/Pods-ReproModels.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -23,15 +27,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E7B67FEC87F469BBEB9AB35 /* Pods_ReproModels.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7A562E4214C6AA91BDBA807F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F54C2B7D15CAD197369DF776 /* Pods-ReproModels.debug.xcconfig */,
+				71F16A84AE8D15B698F2B7F9 /* Pods-ReproModels.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		990C2EA91E1E930257672352 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1BF7F7C3A47BCC355B652F75 /* Pods_ReproModels.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -42,6 +57,7 @@
 				DD8A9ABB1CF8E7570043EE55 /* ReproModels */,
 				DD8A9ABA1CF8E7570043EE55 /* Products */,
 				990C2EA91E1E930257672352 /* Frameworks */,
+				7A562E4214C6AA91BDBA807F /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,10 +97,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DD8A9AC11CF8E7570043EE55 /* Build configuration list for PBXNativeTarget "ReproModels" */;
 			buildPhases = (
+				F8485CD4B8EFD6F30BD01AC6 /* 📦 Check Pods Manifest.lock */,
 				DD8A9AB41CF8E7570043EE55 /* Sources */,
 				DD8A9AB51CF8E7570043EE55 /* Frameworks */,
 				DD8A9AB61CF8E7570043EE55 /* Headers */,
 				DD8A9AB71CF8E7570043EE55 /* Resources */,
+				79BAA021EA75A1780330DD12 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -135,6 +153,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		79BAA021EA75A1780330DD12 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-ReproModels/Pods-ReproModels-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F8485CD4B8EFD6F30BD01AC6 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DD8A9AB41CF8E7570043EE55 /* Sources */ = {
@@ -241,6 +292,7 @@
 		};
 		DD8A9AC21CF8E7570043EE55 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F54C2B7D15CAD197369DF776 /* Pods-ReproModels.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
@@ -259,6 +311,7 @@
 		};
 		DD8A9AC31CF8E7570043EE55 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 71F16A84AE8D15B698F2B7F9 /* Pods-ReproModels.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;

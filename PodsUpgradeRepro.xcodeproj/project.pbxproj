@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A84145ED46780A9EFE82DBFC /* Pods_PodsUpgradeRepro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D563B3F4B8680106492D734 /* Pods_PodsUpgradeRepro.framework */; };
 		DD8A9A541CF8C1B90043EE55 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8A9A531CF8C1B90043EE55 /* AppDelegate.swift */; };
 		DD8A9A561CF8C1B90043EE55 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8A9A551CF8C1B90043EE55 /* ViewController.swift */; };
 		DD8A9A591CF8C1B90043EE55 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD8A9A571CF8C1B90043EE55 /* Main.storyboard */; };
@@ -48,6 +49,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		18364B706A5DF50905B78883 /* Pods-PodsUpgradeRepro.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PodsUpgradeRepro.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PodsUpgradeRepro/Pods-PodsUpgradeRepro.debug.xcconfig"; sourceTree = "<group>"; };
+		5D563B3F4B8680106492D734 /* Pods_PodsUpgradeRepro.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PodsUpgradeRepro.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD8A9A501CF8C1B90043EE55 /* PodsUpgradeRepro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PodsUpgradeRepro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD8A9A531CF8C1B90043EE55 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DD8A9A551CF8C1B90043EE55 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -57,6 +60,7 @@
 		DD8A9A5F1CF8C1B90043EE55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DD8A9AA31CF8CD810043EE55 /* ReproLogging.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ReproLogging.xcodeproj; path = ReproLogging/ReproLogging.xcodeproj; sourceTree = "<group>"; };
 		DD8A9AC41CF8E7570043EE55 /* ReproModels.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ReproModels.xcodeproj; path = ReproModels/ReproModels.xcodeproj; sourceTree = "<group>"; };
+		FC44C975C9807BFF2A20598B /* Pods-PodsUpgradeRepro.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PodsUpgradeRepro.release.xcconfig"; path = "Pods/Target Support Files/Pods-PodsUpgradeRepro/Pods-PodsUpgradeRepro.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +70,7 @@
 			files = (
 				DD8A9ACC1CF8E7AE0043EE55 /* ReproModels.framework in Frameworks */,
 				DD8A9AAB1CF8CD8C0043EE55 /* ReproLogging.framework in Frameworks */,
+				A84145ED46780A9EFE82DBFC /* Pods_PodsUpgradeRepro.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +82,7 @@
 			children = (
 				DD8A9AC41CF8E7570043EE55 /* ReproModels.xcodeproj */,
 				DD8A9AA31CF8CD810043EE55 /* ReproLogging.xcodeproj */,
+				5D563B3F4B8680106492D734 /* Pods_PodsUpgradeRepro.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -87,6 +93,7 @@
 				DD8A9A521CF8C1B90043EE55 /* PodsUpgradeRepro */,
 				DD8A9A511CF8C1B90043EE55 /* Products */,
 				67797244AC15750E603BF8DD /* Frameworks */,
+				F1C1C2E7E5852A97B345A1C1 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -127,6 +134,15 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		F1C1C2E7E5852A97B345A1C1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				18364B706A5DF50905B78883 /* Pods-PodsUpgradeRepro.debug.xcconfig */,
+				FC44C975C9807BFF2A20598B /* Pods-PodsUpgradeRepro.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,9 +150,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DD8A9A621CF8C1B90043EE55 /* Build configuration list for PBXNativeTarget "PodsUpgradeRepro" */;
 			buildPhases = (
+				C4A916C29F42FC033D2765E4 /* 📦 Check Pods Manifest.lock */,
 				DD8A9A4C1CF8C1B90043EE55 /* Sources */,
 				DD8A9A4D1CF8C1B90043EE55 /* Frameworks */,
 				DD8A9A4E1CF8C1B90043EE55 /* Resources */,
+				D50964BDFAD890DF1B38D310 /* 📦 Embed Pods Frameworks */,
+				9341A6A8B1BD254DC609DD19 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -221,6 +240,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9341A6A8B1BD254DC609DD19 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PodsUpgradeRepro/Pods-PodsUpgradeRepro-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C4A916C29F42FC033D2765E4 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D50964BDFAD890DF1B38D310 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PodsUpgradeRepro/Pods-PodsUpgradeRepro-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DD8A9A4C1CF8C1B90043EE55 /* Sources */ = {
@@ -354,6 +421,7 @@
 		};
 		DD8A9A631CF8C1B90043EE55 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 18364B706A5DF50905B78883 /* Pods-PodsUpgradeRepro.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = PodsUpgradeRepro/Info.plist;
@@ -365,6 +433,7 @@
 		};
 		DD8A9A641CF8C1B90043EE55 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC44C975C9807BFF2A20598B /* Pods-PodsUpgradeRepro.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = PodsUpgradeRepro/Info.plist;
