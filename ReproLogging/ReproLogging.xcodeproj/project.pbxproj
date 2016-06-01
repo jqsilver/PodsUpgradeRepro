@@ -97,12 +97,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DD8A9A9E1CF8CD2D0043EE55 /* Build configuration list for PBXNativeTarget "ReproLogging" */;
 			buildPhases = (
-				6C467AE23BD5961A4A38BEBE /* 📦 Check Pods Manifest.lock */,
 				DD8A9A911CF8CD2D0043EE55 /* Sources */,
 				DD8A9A921CF8CD2D0043EE55 /* Frameworks */,
 				DD8A9A931CF8CD2D0043EE55 /* Headers */,
 				DD8A9A941CF8CD2D0043EE55 /* Resources */,
-				8F0B744E21B2F705FE2081C5 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -153,39 +151,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		6C467AE23BD5961A4A38BEBE /* 📦 Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "📦 Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		8F0B744E21B2F705FE2081C5 /* 📦 Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "📦 Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-ReproLogging/Pods-ReproLogging-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DD8A9A911CF8CD2D0043EE55 /* Sources */ = {
@@ -292,13 +257,13 @@
 		};
 		DD8A9A9F1CF8CD2D0043EE55 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E6C5F0A6582510DE1EDC4C75 /* Pods-ReproLogging.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
 				INFOPLIST_FILE = ReproLogging/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -311,13 +276,13 @@
 		};
 		DD8A9AA01CF8CD2D0043EE55 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5737F72B45F08BB3945C65BC /* Pods-ReproLogging.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
 				INFOPLIST_FILE = ReproLogging/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
